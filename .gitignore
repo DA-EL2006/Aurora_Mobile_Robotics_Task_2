@@ -60,3 +60,6 @@ Thumbs.db
 examples/*.mp4
 examples/*.gif
 examples/*.webm
+
+# Advanced example outputs (PNG, CSV, logs next to scripts)
+examples/advanced/adv_*

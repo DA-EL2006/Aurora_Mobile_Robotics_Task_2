@@ -116,6 +116,8 @@ The `examples/` directory includes:
 - **Motion / kinematics:** `motion_two_wheel_demo.py`, `motion_differential_demo.py`, `motion_ackermann_demo.py`, `motion_mecanum_demo.py`, `motion_bicycle_demo.py`, `minimal_drive_and_play.py`
 - **Live demos:** `live_kinematics_demo.py` (CLI: mode, speed, logs, optional save), `live_ackermann_quick.py`, `live_ackermann_session.py`
 - **Scratch:** `examples/simple/test.py` — small script for local experiments
+- **Teaching / class:** `examples/class/` — numbered short scripts (`01_pose.py` … `08_playback_log.py`); see `examples/class/README.md`
+- **Advanced:** `examples/advanced/` — logging tee, `drive_to_pose`, mecanum/differential patterns, 4-model subplot, CSV export, `plot_motion` styling; see `examples/advanced/README.md`
 
 Run from the repo root with `PYTHONPATH=.` or after `pip install -e .` so `AuroraMR` resolves.
 
