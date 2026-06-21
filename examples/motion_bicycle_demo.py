@@ -29,7 +29,17 @@ session.forward(2.0, 0.6)
 session.turn_left(math.radians(40), 0.8)
 session.forward(1.5, 0.5)
 
+
 fig, ax = plt.subplots(figsize=(8, 8))
 amr.plot_motion(session, ax=ax, show=False)
 fig.savefig(os.path.join(os.path.dirname(__file__), "motion_bicycle_demo.png"), dpi=150)
 print("Saved motion_bicycle_demo.png (BicycleParams → Ackermann four-wheel)")
+amr.play_motion_by_kind(
+        "ackermann",
+        interval_ms=28,
+        playback_speed=0.5,
+        show=True,
+        log=True,
+        log_every_n_frames=10,
+        log_detailed=False,
+    )
